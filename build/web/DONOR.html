@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items:center; 
+            background-image: url("bgimg.jpg");
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        td {
+            padding: 8px;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 50%;
+            border: 3px solid black;
+            border-radius: 15%;
+            backdrop-filter: blur(30px);
+        }
+
+        .fname-style, .addr-style,.eml-style,.con-style,.pass-style,.addr-style,.opt-style,.conpass-style{
+            background-color:palevioletred;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="abc">
+            <table>
+
+                <tr>
+                    <td colspan="2" style="text-align:center">  Registration Form </td>
+                    <br>
+                </tr>
+                <tr>
+                    <td> Name :</td>
+                    <td> <input type="text" name="fname" class="fname-style"></td>
+                </tr>
+                
+                <tr>
+                    <td> Address </td>
+                    <td> <input type="text" name="add" class="addr-style"></td>
+                </tr>
+                <tr>
+                    <td> Contact No </td>
+                    <td> <input type="number" name="con" class="con-style"></td>
+                </tr>
+                <tr>
+                    <center>
+                        <td>Choose an option:</td>
+                        <td colspan="2" style="text-align:center" class="opt-style">
+
+                            <input type="radio" name="gender" checked> INDIVIDUAL
+                            <input type="radio" name="gender"> ORGANIZATION <br><br>
+
+                        </td>
+                    </center>
+
+                </tr>
+
+
+                <br><br>
+                <tr>
+                    <td> Email : </td>
+                    <td> <input type="text" name="eml" class="eml-style"></td>
+                </tr>
+                <tr>
+                    <td>Password : </td>
+                    <td> <input type="password" name="pass" class="pass-style"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password : </td>
+                    <td> <input type="password" name="conpass" class="conpass-style"></td>
+                </tr>
+                <tr>
+
+                    <td colspan="2" style="text-align:center"> <input type="submit" name="donate"></td>
+                
+               
+            </table>
+        </form>
+    </div>
+</body>
+
+
+
+</html>
+
+   
