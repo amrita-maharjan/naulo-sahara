@@ -69,7 +69,7 @@ public class loginValidation extends HttpServlet {
                 }
                 if (count == 0) {
 
-                    out.write("<script>alert('enter the correct credential');</script>");
+//                    out.write("<script>alert('enter the correct credential');</script>");
                     RequestDispatcher rd = request.getRequestDispatcher("landing.jsp");
                     rd.include(request, response);
 
@@ -78,6 +78,8 @@ public class loginValidation extends HttpServlet {
                     rd.include(request, response);
 
                 }
+                
+                
                 con.close();
             } catch (Exception ex) {
                 out.write(ex.getMessage());
